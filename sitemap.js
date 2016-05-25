@@ -5,7 +5,7 @@
  */
 document.body.oncontextmenu=function() {return false;}
 var tocConfig = {
-	url: "http://www.kejari.com",
+	url: "http://www.kolomblogger.com",
 	feedNum: 14,
 	labelName: (window.location.hash && window.location.hash != '#0' && window.location.hash != '#search') ? encodeURIComponent(window.location.hash.substr(1)) : false,
 	numChars: 100,
@@ -99,7 +99,7 @@ function showFeedList(json) {
 			skeleton += "</div></li>";
 		}
 		if (input.value !== '' && window.location.hash == '#search') {
-			resultDesc.innerHTML = "<span>Hasil penelusuran untuk kata kunci <strong>&quot;" + input.value + "&quot;</strong></span>";
+			resultDesc.innerHTML = "<span>Hasil pencarian <strong>&quot;" + input.value + "&quot;</strong></span>";
 		} else {
 			resultDesc.innerHTML = "";
 		}
