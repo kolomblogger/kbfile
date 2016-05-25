@@ -6,11 +6,11 @@
 document.body.oncontextmenu=function() {return false;}
 var tocConfig = {
 	url: "http://www.kolomblogger.com",
-	feedNum: 14,
+	feedNum: 9,
 	labelName: (window.location.hash && window.location.hash != '#0' && window.location.hash != '#search') ? encodeURIComponent(window.location.hash.substr(1)) : false,
-	numChars: 100,
-	thumbWidth: 320,
-	thumbHeight: 190,
+	numChars: 0,
+	thumbWidth: 300,
+	thumbHeight: 270,
 	navText: "Selanjutnya &#9660;",
 	frontText: "Top",
 	noImage: "http://1.bp.blogspot.com/-kjOxg7UqWTs/UW_X2JC8O6I/AAAAAAAAA_k/3KYB6uDKvFI/s1600/512px-No_image_available.svg.png",
@@ -96,7 +96,6 @@ function showFeedList(json) {
 			skeleton += "<li><div class='inner'>";
 			skeleton += "<a href='" + postUrl + "' target='_blank'><img style='width:" + tocConfig.thumbWidth + "px;height:" + tocConfig.thumbHeight + "px;' src='" + postImage + "' alt='" + postTitle + "' title='" + postTitle + "' /></a>";
 			skeleton += "<a class='toc-title' href='" + postUrl + "' target='_blank'>" + postTitle + "</a><br>";
-			skeleton += "<div class='news-text'>" + cropFeed(postContent, tocConfig.numChars) + "&hellip;<br style='clear:both;'/></div>";
 			skeleton += "</div></li>";
 		}
 		if (input.value !== '' && window.location.hash == '#search') {
