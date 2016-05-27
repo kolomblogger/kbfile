@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<title>Header Satu Kolom Sejajar Menu</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' type='text/css'>
+<meta content='Membuat Header Satu Kolom Sejajar Menu' name='description'/>
+<style type='text/css'>
+body{font-family: 'Roboto', sans-serif;font-size:18px;font-weight:400;color:#666;padding:10px 20px 60px}
+#header-wrapper{background:#fff;height:60px;width:100%;position:fixed;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);top:0;right:0;left:0;z-index:9;transition:all .5s ease-in-out}
+#headersig{max-width:1060px;margin:0 auto;position:relative}
+#header{float:left;font-size:160%;text-transform:uppercase;font-weight:300;line-height:57px;margin-top:14px}
+#header img{margin:0;padding:0;max-width:180px;max-height:70px}
+.titlewrapper{margin:0;padding:0}
+.header h1.title,.header p.title{font-size:22px;font-weight:700;color:#555;letter-spacing:-.4px;margin:0 0 5px}
+.header .description{color:#666;font-size:12px;margin:3px 0}
+.header a,.header a:hover{color:#555}
+.logo{float:left;font-size:160%;text-transform:uppercase;font-weight:300;max-height:70px}
+.logo a{color:#fff;text-decoration:none;margin-top:-5px}
+.logo a:hover{color:#fff;text-decoration:none}
+.logo img{top:0;left:0!important}
+#search-box{position:relative;width:40%;margin:11px 20px;float:left}
+#cse-search-box{height:35px;border-radius:3px;background-color:#eee;overflow:hidden;border:3px solid #eee}
+#search-text{font-size:12px;color:#CCC;border-width:0;background:transparent;font-family:'Roboto',sans-serif;font-weight:400;line-height:35px;padding:0 20px 0 10px}
+#cse-search-box .fa-search,#cse-search-box .fa-arrow-left{position:absolute;top:13px;left:13px}
+#search-box input[type="text"]{width:100%;padding-left:35px;line-height:35px;color:#888;outline:none;font-family:'Roboto',sans-serif;font-weight:400;font-size:13px}#search-box .fa-arrow-left{display:none}
+#cse-search-box::selection{border:#4DB6AC solid 1px}
+#search-box input[type="text"]:active{color:#aaa}
+a#showmenu,a#showsearch{text-transform:uppercase;color:#666;font-weight:700;font-size:13px;padding:10px;z-index:9}
+a#showmenu:hover,a#showsearch:hover{color:#2DCC70}
+#showmenu{float:right;padding:12px 14px!important;margin-top:7px;margin-left:-20px;margin-right:10px;font-size:22px!important;color:#444!important;border-radius:100%}
+#headermenu{font-family:'Roboto',Arial;visibility:hidden;position:absolute;background:#fff;text-transform:none!important;list-style:none;right:35px;top:45px;padding:0;width:0;height:0;transition:all .5s cubic-bezier(0.07, 0.68, 0.35, 1.04);z-index:9;overflow:hidden;box-shadow:0 5px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+#headermenu li{width:100%}
+#headermenu li a{padding:10px 15px;width:100%;font-weight:400;color:#666!important;font-size:14px!important}
+#headermenu li a:hover{background:#e1e1e1}
+#headermenu.shows{visibility:visible;width:200px;height:168px}
+/* Social Media Button */
+#headersocial{float:right;margin:-5px 40px -5px 20px}
+#headersocial ul{list-style:none;padding:0;margin-top:14px}
+#headersocial li{float:left;padding:0;margin:0}
+#headersocial li a.fcb{background:#24458A;color:#FFF}
+#headersocial li a.gpl{background:#DD4B39;color:#FFF}
+#headersocial li a.twt{background:#1BB2E9;color:#FFF}
+#headersocial li a.joz{background:#DF0909;color:#FFF}
+#headersocial li a{font-size:17px;border-radius:3px;padding:10px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);margin-right:5px;float:left;color:#fff!important;width:20px;text-align:center}
+#headersocial li a:hover{box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+</style>
+</head>
+<body>
+<header id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+<div id='headersig'>
+<a class='toggleMenu ripple' href='javascript:;'><i class='fa fa-bars'></i></a>
+<a class='ripple' href='javascript:;' id='showsearch'><i class='fa fa-search'></i></a>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title' itemprop='headline'>
+www.KolomBlogger.com
+</h1>
+<div class='descriptionwrapper'>
+<p class='description' itemprop='description'><span>
+</span></p>
+</div>
+</div>
+</div>
+</div></div>
+<div id='headermenu'>
+<li><a class='waves-effect' href='#' itemprop='url' title='About'><span itemprop='name'>About</span></a></li>
+<li><a class='waves-effect' href='#' itemprop='url' title='Contact'><span itemprop='name'>Contact</span></a></li>
+<li><a class='waves-effect' href='#' itemprop='url' title='Sitemap'><span itemprop='name'>Sitemap</span></a></li>
+<li><a class='waves-effect' href='#' itemprop='url' title='Disclaimer'><span itemprop='name'>Disclaimer</span></a></li>
+</div>
+<div id='search-box' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/WebSite'>
+<form action='/search' id='cse-search-box' itemprop='potentialAction' itemscope='itemscope' itemtype='http://schema.org/SearchAction' method='get' onsubmit='return updateScript();'>
+<meta content='/search?q={q}' itemprop='target'/>
+<i class='fa fa-arrow-left' id='showsearch2'></i>
+<i class='fa fa-search'></i>
+<input class='waves-effect' id='search-text' name='q' onblur='if (this.placeholder == "") {this.placeholder = "Search here...";}' onfocus='if (this.value == "Cari disini..") {this.value = ""}' placeholder='Search here...' required='required' type='text'/></form></div>
+<a class='ripple' href='javascript:;' id='showmenu'><i class='fa fa-ellipsis-v'></i></a>
+<div id='headersocial' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<ul>
+<li><a class='fcb waves-effect' href='#' itemprop='sameAs' title='Facebook'><i class='fa fa-facebook'></i></a></li>
+<li><a class='twt waves-effect' href='#' itemprop='sameAs' title='Twitter'><i class='fa fa-twitter'></i></a></li>
+<li><a class='gpl waves-effect' href='#' itemprop='sameAs' title='Google+'><i class='fa fa-google-plus'></i></a></li>
+<li><a class='joz waves-effect' href='#' itemprop='sameAs' title='Youtube'><i class='fa fa-youtube'></i></a></li>
+</ul>
+</div>
+</div>
+</header>
+</body>
+</html>
